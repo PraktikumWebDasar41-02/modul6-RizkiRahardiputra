@@ -14,7 +14,7 @@ if (isset($_POST['submit'])) {
  $sql="INSERT INTO pendaftaran(nama,nim,kelas,jeniskelamin,fakultas,hobi,alamat) VALUES ('$nama','$nim','$kelas','$jeniskelamin','$fakultas','$hobi','$alamat')";
    if(mysqli_query($con,$sql)){
     echo "Database Masuk";
-    header("Location :login.php");
+    
    }else{
     echo "Database Gagal";
    }
